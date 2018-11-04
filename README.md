@@ -129,7 +129,7 @@ function exerciseByronThePoodle() {
   console.log(`Walk to the park ${dogName} the ${dogBreed}`);
   console.log(`Throw the fribsee for ${dogName} the ${dogBreed}`);
   console.log(`Walk home with ${dogName} the ${dogBreed}`);
-  console.log(`Unleash Byron ${dogName} ${dogBreed}`);
+  console.log(`Unleash ${dogName} the ${dogBreed}`);
 }
 ```
 
@@ -173,7 +173,7 @@ function exerciseDog(dogName, dogBreed) {
   console.log(`Walk to the park ${dogName} the ${dogBreed}`);
   console.log(`Throw the fribsee for ${dogName} the ${dogBreed}`);
   console.log(`Walk home with ${dogName} the ${dogBreed}`);
-  console.log(`Unleash Byron ${dogName} ${dogBreed}`);
+  console.log(`Unleash ${dogName} the ${dogBreed}`);
 }
 ```
 
@@ -232,7 +232,7 @@ function exerciseDog(dogName, dogBreed) {
   console.log(`Walk to the park ${dogName} the ${dogBreed}`);
   console.log(`Throw the fribsee for ${dogName} the ${dogBreed}`);
   console.log(`Walk home with ${dogName} the ${dogBreed}`);
-  console.log(`Unleash Byron ${dogName} ${dogBreed}`);
+  console.log(`Unleash ${dogName} the ${dogBreed}`);
   return `${dogName} is happy and tired!`
 }
 
