@@ -104,12 +104,12 @@ error for JavaScript.
 
 ## Define "Generalization"
 
-Looking at our abstraction, `exerciseByronThePoodle()`, pretty concrete, the
+Looking at our abstraction, `exerciseByronThePoodle()`, it's pretty concrete, the
 opposite of abstract. It's concrete because it only works for Byron the Poodle.
 Our function would be more _abstract_ if it were written for _all dogs_ and it
 just-so-happened that Byron the Poodle was one of the eligible things to
 undergo the function's processes. The process of moving from _concrete_ to
-_abstract_ is called "generalization."
+_abstract_ is called "generalization" (or "abstraction," by some).
 
 ## Demonstrate "Generalization" By Using _Parameters_ And _Arguments_
 
@@ -138,14 +138,14 @@ If we _call_ this function, we'll get the exact _same_ result as the original
 
 But there are some advances here. We define the `dogName` and `dogBreed` in
 only one place. That means we can change things a bit easier now by changing
-these variables instead of using find-and-replace.
+these variables instead of using find-and-replace (`2 * 6 = 12`) twelve times.
 
 Our problem now is that our function has the `dogName` and `dogBreed` locked
 in. If we could make it possible to tell each _call_ of the function "Hey use
 these `String`s instead" we could get more _general_.
 
 That's the purpose of _parameters_. _Parameters_ are locally-scoped variables
-that are only usable inside the function. In our example, our variables
+that are usable ("scoped") to inside the function. In our example, our variables
 `dogName` and `dogBreed` should become _parameters_.  They're defined inside of
 the _function declaration's_ `()`.
 
@@ -159,9 +159,7 @@ JavaScript will assign the _arguments_ of "Byron" and "poodle" to the
 _parameters_ `dogName` and `dogBreed` when this function is called like so:
 
 ```javascript
-function exerciseDog("Byron", "poodle") {
-...
-...
+function exerciseDog("Byron", "poodle");
 ```
 
 The full _function declaration_ for `exerciseDog` is:
@@ -198,7 +196,8 @@ in JavaScript**. This can lead to humorous bugs like:
 "Wake undefined the undefined"  // From: console.log("Wake ${dogName} the ${dogBreed}");
 ```
 
-We can assign default arguments to our parameters. 
+We can assign default arguments to our parameters. While it's not as attention-
+grabbing as a real error, it's a helpful signal that we've run off the rails.
 
 ```javascript
 function exerciseDog(dogName="ERROR the Broken Dog", dogBreed="Sick Puppy") {
@@ -237,11 +236,11 @@ function exerciseDog(dogName, dogBreed) {
 }
 
 let result = exerciseDog("Byron", "poodle");
-console.log(result);
+console.log(result); // => "Byron did not exercise due to rain"
 ```
 
 In JavaScript, when a function is _called_, when it encounters a `return`
-statement it returns the thing that appears to the right of the word. The thing
+statement it "returns" the value of the thing that appears to the right of the word. The thing
 could be a `String`, a `Number` or an _expression_ like `1 + 1` (which returns,
 `2`, sensibly enough).
 
