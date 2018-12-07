@@ -37,7 +37,7 @@ of abstractions.
 We create abstractions to make it easier to shorten our sentences. We'd never
 get anything done if we couldn't abstract! We also use abstractions to decide
 what doesn't fit or what should fit. "Mozart" doesn't belong with The Beatles,
-but he does fit with "Baroque Masters."
+but he does fit with "Classical Masters."
 
 Abstractions help us think about complex activities. Humans brought the pattern of
 "abstracting work" to JavaScript. Abstractions that hold work are called
